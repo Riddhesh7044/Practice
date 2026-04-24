@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selctors</title>
+    <!-- # for ID slector
+    . for Class Selector -->
+    <style>
+        div {
+            background-color: antiquewhite;
+        }
+
+        .red {
+            background-color: aqua;
+        }
+
+        #green {
+            background-color: black;
+            color: white;
+        }
+        div > p {
+            background-color:  rgb(80, 14, 146);
+        }
+        div p {
+            background-color: blueviolet;
+        }
+        /* Universal selctor */
+        *{
+            margin:0;
+            padding: 0;
+        }
+
+        /* pseudo selector */
+
+        a :visited{
+            color: yellow;
+        }
+
+        a:link{
+            color: hotpink;
+        }
+        a :active{
+            background-color: red;
+        }
+
+        a :hover{
+            background-color: yellow;
+        }
+        
+
+
+    </style>
+</head>
+
+<body>
+    <div class="ONE">
+        i am a selector
+    </div>
+    <h1>This is the Div Selector</h1>
+    <!-- Div selectors -->
+    <div>
+        Hii This is the div selector 1
+    </div>
+
+    <div class="red">
+        Hii this is the div selector 2
+    </div>
+
+    <h1>This is the id Selector</h1>
+
+    <div id="green">Hii this is the div selector 3
+    </div>
+
+    <div>
+        Hii this is the div selector 4
+    </div>
+    <!-- Child Selector  -->
+     <div>
+       
+        <p>Lorem, ipsum dolor.</p>
+     </div>
+
+     <!-- desendent selector -->
+
+     <div>
+        hale huya hale hya ha ha
+        <article>ye kya kya din aa gye hai bhai
+            <p>Lorem ipsum dolor sit amet.</p>
+        </article> 
+     </div>
+
+     <!-- universal selector
+       -->
+
+
+     <div>
+        <article>
+            Hii this is Riddhesh Mandavkar 
+            <p>
+                Hii
+            </p>
+        </article>
+     </div>
+
+     <div>
+        <a target="_blank" href="https://www.youtube.com">Open Youtube</a>
+     </div>
+
+     <div>
+        <a target="_blank" href="https://www.filo.com">Open filo</a>
+     </div>
+
+    
+</body>
+
+</html>
